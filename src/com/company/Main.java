@@ -8,7 +8,7 @@ public class Main {
         if(args.length > 0) {
             File file = new File(args[0]);
 
-           
+
         }
     }
 }
