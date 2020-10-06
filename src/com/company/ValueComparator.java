@@ -7,7 +7,7 @@ import java.util.Map;
 class ValueComparator implements Comparator<String> {
     private Map<String, Integer> base;
 
-    public ValueComparator(HashMap<String, Integer> base) {
+    ValueComparator(HashMap<String, Integer> base) {
         this.base = base;
     }
 
@@ -18,6 +18,6 @@ class ValueComparator implements Comparator<String> {
             return -1;
         } else {
             return 1;
-        } // returning 0 would merge keys
+        }
     }
 }
