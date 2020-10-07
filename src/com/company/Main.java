@@ -16,6 +16,7 @@ public class Main {
             Scanner scanner = new Scanner(file);
             projectWords.analyse(scanner);
             projectWords.showResults();
+            scanner.close();
         }
     }
 
@@ -35,7 +36,7 @@ public class Main {
                 this.addWord(matchedWord);
             }
         }
-        scanner.close();
+
     }
 
     private void addWord(String matchedWord) {
