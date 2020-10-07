@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 
 public class Main {
     private HashMap<String, Integer> map = new HashMap<String, Integer>();
-
+    private static final String pattern = "[a-zA-Z'-]+";
     public static void main(String[] args) throws IOException {
         Main projectWords = new Main();
 
@@ -22,7 +22,7 @@ public class Main {
 
     private void analyse(Scanner scanner) {
 
-        String pattern = "[a-zA-Z'-]+";
+
         Pattern r = Pattern.compile(pattern);
 
         while (scanner.hasNext()) {
