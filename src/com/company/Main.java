@@ -16,6 +16,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
+
             lines(Path.of(args[0]))
                     .flatMap(l -> of(l.split("[^\\p{IsAlphabetic}]")))
                     .filter(l -> !l.isEmpty())
